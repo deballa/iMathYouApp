@@ -1,0 +1,39 @@
+:root {
+  --ion-color-favorite: #69bb7b;
+  --ion-color-favorite-rgb: 105,187,123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255,255,255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
+}
+
+/*Header iMathYou */
+.color {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*Banner iMathYou */
+#banner-calculadora {
+  background-color:rgb(77, 77, 77); 
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+  .ico-cal {
+    font-size: 18px;
+    margin-bottom: -4px;
+  }
+
+/*Calculadora*/
+ion-input {
+  font-size: 40px;
+  min-height: 80px;
+}
+
+.resultado {
+  font-size: 50px;
+  font-weight: bolder;
+}
+

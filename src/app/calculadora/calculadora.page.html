@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-router-link class="color" href="#">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-router-link>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>iMathYou</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Operadores aritméticos</ion-label>
+    </ion-item>
+    <ion-card-content>
+      Os operadores aritméticos realizam as operações fundamentais da matemática entre duas variáveis 
+      e retornam o resultado.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col size="12" id="banner-calculadora">
+        Exemplo:
+        <ion-icon name="calculator" class="ico-cal"></ion-icon>
+        calculadora
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-item>
+    <ion-label position="floating" color="favorite"> Digite o 1º número</ion-label>
+    <ion-input color="medium" type="number" [(ngModel)]="n1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="favorite"> Digite o 2º número</ion-label>
+    <ion-input color="medium" type="number" [(ngModel)]="n2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Resultado: </ion-label>
+    <ion-input color="success" [(ngModel)]="resultado" class="resultado"></ion-input>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row style="text-align: center;">
+      <ion-col size="3"> <ion-button (click)="somar()" size="large" color="tertiary"> + </ion-button> </ion-col>    
+      <ion-col size="3"> <ion-button (click)="subtrair()" size="large" color="tertiary"> - </ion-button> </ion-col>  
+      <ion-col size="3"> <ion-button (click)="multiplicar()" size="large" color="tertiary"> X </ion-button> </ion-col>  
+      <ion-col size="3"> <ion-button (click)="dividir()" size="large" color="tertiary"> / </ion-button> </ion-col>  
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
